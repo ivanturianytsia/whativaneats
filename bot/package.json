@@ -1,0 +1,24 @@
+{
+  "name": "whativaneats-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanturianytsia/whativaneats.git"
+  },
+  "author": "Ivan Turianytsia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanturianytsia/whativaneats/issues"
+  },
+  "homepage": "https://github.com/ivanturianytsia/whativaneats#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "firebase-admin": "^9.0.0",
+    "telegraf": "^3.38.0"
+  }
+}
