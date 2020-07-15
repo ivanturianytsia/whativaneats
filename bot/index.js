@@ -19,5 +19,5 @@ bot.on('photo', async ctx => {
 
 bot.launch()
 
-bot.telegram.setWebhook(process.env.WEBHOOK_URL)
-bot.startWebhook(process.env.WEBHOOK_PATH, null, process.env.WEBHOOK_PORT)
+bot.telegram.setWebhook(`${process.env.WEBHOOK_HOST}:${process.env.PORT}/upload`)
+bot.startWebhook('/upload', null, process.env.PORT)
