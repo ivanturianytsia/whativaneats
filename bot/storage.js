@@ -12,13 +12,13 @@ firebaseAdmin.initializeApp({
 const bucket = firebaseAdmin.storage().bucket()
 
 module.exports = {
-  async uploadPhoto (ctx) {
-    const fileId = ctx.update.message.photo[1].file_id
+  async uploadPhoto (url, filename) {
+    const response = await axios({
+      url,
+      responseType: 'stream'
+    })
 
-    const url = await ctx.telegram.getFileLink(fileId)
-    const response = await axios({url, responseType: 'stream'})
-
-    const blob = bucket.file(`${ctx.update.message.date}.jpg`)
+    const blob = bucket.file(filename)
     const blobStream = blob.createWriteStream()
 
     return new Promise((resolve, reject) => {
