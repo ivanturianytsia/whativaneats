@@ -18,7 +18,7 @@
   "homepage": "https://github.com/ivanturianytsia/whativaneats#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "firebase-admin": "^9.0.0",
+    "firebase-admin": "^11.4.1",
     "telegraf": "^3.38.0"
   }
 }
